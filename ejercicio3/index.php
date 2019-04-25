@@ -36,12 +36,13 @@
 
 <?php
 $usuarios= array(
-   'Daniel'=>1234,
-   'Paul'=>4321,
+   'Daniel'=>'u',
+   'Paul'=>'pelota',
    'Richie'=>123,
    'Sebastien'=>231
 );
-print_r($usuarios);
+//print_r($usuarios);
 //echo ($usuarios);
-
+//var_dump($usuarios[$user][$pass]);
+echo ($usuarios[$user][$pass]);
 ?>
