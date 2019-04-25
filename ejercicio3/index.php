@@ -1,6 +1,7 @@
 <?php
 /**
- * Crear un arreglo asociativo que almacene las claves de acceso de 5 usuarios de un sistema. Acceder a cada componente por su nombre.
+ * Crear un arreglo asociativo que almacene las claves de acceso de 5 usuarios de un sistema. 
+ * Acceder a cada componente por su nombre.
  El arreglo debe tener el formato
  [
     'juan' => 'contrasena_segura'
@@ -13,7 +14,7 @@
 
 
 ?>
-
+<?php //include('app/process_form.php'); ?>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -21,19 +22,26 @@
         <h1 align = "center">EJERCICIO 1</h1>
 	</head>
 	<body>
-   <form method="post">
-     <center>
-     <div>
-     <label>Nombre del usuario : <input type="text" id="usuario" /></label>
-     </div>
-     <br>
-     <div>
-     <label>Contraseña : <input type ="password" name = "pass" ></label>
-     </div>
-     </center>
-      <br>
-      <center><input type="submit" value="INGRESAR"/> </center>
-</form>
+   <?php
+   $user = $_POST["user"];
+   $pass = $_POST["pass"];
+   include('Vistas/login.php');
+   ?>
+   
 
 	</body>
+
 </html>	
+
+
+<?php
+$usuarios= array(
+   'Daniel'=>1234,
+   'Paul'=>4321,
+   'Richie'=>123,
+   'Sebastien'=>231
+);
+print_r($usuarios);
+//echo ($usuarios);
+
+?>
