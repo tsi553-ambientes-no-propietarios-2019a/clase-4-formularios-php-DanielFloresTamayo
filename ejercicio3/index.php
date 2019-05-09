@@ -23,8 +23,8 @@
 	</head>
 	<body>
    <?php
-   $user = $_POST["user"];
-   $pass = $_POST["pass"];
+//$user = $_POST["user"];
+ //  $pass = $_POST["pass"];
    include('Vistas/login.php');
    ?>
    
@@ -44,5 +44,5 @@ $usuarios= array(
 //print_r($usuarios);
 //echo ($usuarios);
 //var_dump($usuarios[$user][$pass]);
-echo ($usuarios[$user][$pass]);
+//echo ($usuarios[$user][$pass]);
 ?>
